@@ -16,7 +16,7 @@ if ("geolocation" in navigator) {
 /* Where in the world are you? */
 $('.js-geolocation').on('click', function () {});
 $(document).ready(function () {
-  $('#modal').modal('show')
+  $('#modal').modal('show');
   loadWeather('', ''); //@params location, woeid
   $('#calendar').fullCalendar({
     googleCalendarApiKey: "",
