@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Hello, world!</title>
     <!-- Required meta tags -->
@@ -9,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./src/bootstrap/dist/css/bootstrap.min.css">
     <!-- Weather CSS -->
-    <link rel="stylesheet" href="./src/weather/weather.css">    
+    <link rel="stylesheet" href="./src/weather/weather.css">
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Calendar css -->
@@ -28,21 +29,45 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./src/style.css">
 </head>
-<body background="./src/images/nairobi.jpg">
+
+<body background="./src/images/sky.jpg">
     <div class="container-fluid">
         <!-- Header -->
         <nav class="navbar">
             <a class="navbar-brand  text-white" href="#">
-               <h4 class="display-4">Hello :)</h4>
+                <h4 class="display-4">Hello :)</h4>
             </a>
         </nav>
         <div class="row float-right" style="position: fixed; right: 0px; top:10px">
-            <div id="weather" class="text-white"></div>
+            <div id="weather" class="text-black"></div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About this..</h5>
+                    </div>
+                    <div class="modal-body">
+                        &bull; This is a landing page with a simple weather widget to the right and a calendar on the bottom right. <br> &bull; The calendar
+                        can be configured to sync with a user's calendar via the Google Calendar Api. <br>&bull; Just replace
+                        <b>api_key</b> and <b>calender_id</b> in <b>src/script.js</b> with the respective credentials from your
+                        <a href="https://developers.google.com/google-apps/calendar/quickstart/js">
+                            <b>Google developer console</b>
+                        </a>and enjoy. <br>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
-            <div id='calendar' class="text-white calender-position"></div>
+            <b>
+                <div id='calendar' class="text-black calender-position"></div>
+            </b>
         </div>
     </div>
     </div>
 </body>
+
 </html>

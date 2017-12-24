@@ -5,9 +5,11 @@
   background-attachment: fixed;
   background-size: cover;
 }
-div{
+
+div {
   overflow: hidden;
 }
+
 .frost {
   background: inherit;
   position: absolute;
@@ -22,11 +24,11 @@ div{
   top: -25px;
   bottom: 0; */
 }
-.calender-position{
-  position: fixed;
-  width: 35%;
-  height: 58%;
-  bottom: 5px;
-  left: 5px;
-}
 
+.calender-position {
+  position: fixed;
+  width: 30%;
+  height: 40%;
+  bottom: 5px;
+  right: 5px;
+}

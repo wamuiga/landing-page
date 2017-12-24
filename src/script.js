@@ -1,4 +1,9 @@
-console.log("Script loaded");
+try {
+  var credentials = require("./credentials");
+} catch (error) {
+  console.log(Error)
+}
+
 /* Does your browser support geolocation? */
 if ("geolocation" in navigator) {
   // $('.js-geolocation').show(); 
@@ -11,8 +16,14 @@ if ("geolocation" in navigator) {
 /* Where in the world are you? */
 $('.js-geolocation').on('click', function () {});
 $(document).ready(function () {
+  $('#modal').modal('show')
   loadWeather('', ''); //@params location, woeid
   $('#calendar').fullCalendar({
+    googleCalendarApiKey: "",
+    events: {
+      googleCalendarId: ""
+    },
+    height: 380,
     // themeSystem: 'jquery-ui',
     buttonIcon: {
       prev: 'glyphicon-menu-left',
@@ -24,7 +35,7 @@ $(document).ready(function () {
       prev_month: {
         text: 'Previous',
         icon: 'glyphicon-menu-left',
-        themeIcon :{
+        themeIcon: {
           prev: 'left-single-arrow',
           next: 'right-single-arrow',
           prevYear: 'left-double-arrow',
