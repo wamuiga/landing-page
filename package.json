@@ -6,6 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Lewis Munyi",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "fullcalendar": "^3.8.0",
+    "jquery": "^3.2.1",
+    "material-design-icons": "^3.0.1"
+  }
 }
