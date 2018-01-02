@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="./sample_1/src/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url(./sample_2/src/images/sky.jpg), url(./sample_1/src/images/nairobi.jpg);
+            /*background-position: right bottom, left top;*/
+            /*background-repeat: no-repeat, no-repeat;*/
+            background-repeat: no-repeat, repeat-y;
+            background-position:0px 55% , 0% 5%;
+        }
+        .button1{
+            position: fixed;
+            left : 44%;
+            top: 25%;
+        }
+        .button2{
+            position: fixed;
+            left : 44%;
+            bottom: 25%;
+        }
+    </style>
+    <script>
+        function sample1(){
+            window.location.href = "sample_1/";
+        }
+        function sample2(){
+            window.location.href = "sample_2/";
+        }
+    </script>
+</head>
+
+<body>
+<button onclick="sample1()" type="button" class="button1 btn btn-outline-light btn-lg">View Sample Page 1</button>
+<button onclick="sample2()" type="button" class="button2 btn btn-outline-light btn-lg">View Sample Page 2</button>
+</body>
+
+</html>
