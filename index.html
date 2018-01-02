@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Hello, world!</title>
-    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./src/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Weather CSS -->
-    <link rel="stylesheet" href="./src/weather/weather.css">    
-    <!-- Material icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Calendar css -->
-    <link rel="stylesheet" href="./src/fullcalendar/dist/fullcalendar.min.css">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./src/jquery/dist/jquery.min.js"></script>
-    <script src="./src/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Simple weather JS -->
-    <script src="./src/weather/jquery.simpleWeather.min.js"></script>
-    <script src="./src/moment/min/moment.min.js"></script>
-    <script src="./src/fullcalendar/dist/fullcalendar.min.js"></script>
-    <script src="./src/fullcalendar/dist/gcal.min.js"></script>
-    <!-- Custom Script -->
-    <script src="./src/script.js"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./src/style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="./sample_1/src/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url(./sample_2/src/images/sky.jpg), url(./sample_1/src/images/nairobi.jpg);
+            /*background-position: right bottom, left top;*/
+            /*background-repeat: no-repeat, no-repeat;*/
+            background-repeat: no-repeat, repeat-y;
+            background-position:0px 55% , 0% 5%;
+        }
+        .button1{
+            position: fixed;
+            left : 44%;
+            top: 25%;
+        }
+        .button2{
+            position: fixed;
+            left : 44%;
+            bottom: 25%;
+        }
+    </style>
+    <script>
+        function sample1(){
+            window.location.href = "sample_1/";
+        }
+        function sample2(){
+            window.location.href = "sample_2/";
+        }
+    </script>
 </head>
-<body background="./src/images/nairobi.jpg">
-    <div class="container-fluid">
-        <!-- Header -->
-        <nav class="navbar">
-            <a class="navbar-brand  text-white" href="#">
-               <h4 class="display-4">Hello :)</h4>
-            </a>
-        </nav>
-        <div class="row float-right" style="position: fixed; right: 0px; top:10px">
-            <div id="weather" class="text-white"></div>
-        </div>
-        <div class="row">
-            <div id='calendar' class="text-white calender-position"></div>
-        </div>
-    </div>
-    </div>
+
+<body>
+<button onclick="sample1()" type="button" class="button1 btn btn-outline-light btn-lg">View Sample Page 1</button>
+<button onclick="sample2()" type="button" class="button2 btn btn-outline-light btn-lg">View Sample Page 2</button>
 </body>
+
 </html>
